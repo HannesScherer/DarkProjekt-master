@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+.mainImp{
+    background-color: var(--color-menu);
+    color: var(--color-text);
+    max-width: 100vw;
+    margin:auto;
+    padding: 70px 0;
+    text-align: center;
+
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.col{
+    width: 25%;
+    padding: 0 15px;
+}
