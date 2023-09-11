@@ -1,0 +1,12 @@
+<button (click)="toggleMenu()">
+    <a><img [src]="lightNav"></a>
+</button>
+
+<div *ngIf="menuOpen" class="menu">
+    <a>Anmelden</a>
+    <a>Account erstellen</a>
+    <a>Über Uns</a>
+    <a>Datenschutz</a>
+    <a>Rechtliches</a>
+    <a>FAQ</a>
+</div>

@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-impressum',
   templateUrl: './impressum.component.html',
   styleUrls: ['./impressum.component.scss']
 })
-export class ImpressumComponent {
+export class ImpressumComponent extends AppComponent {
 
-  gitHubLight = './assets/github-mark.svg';
-  linkedInLight ='./assets/linkedin.svg';
-  discordLight = './assets/discord-mark-black.svg';
+  constructor() {
+      super();
+      
+  
+  }
+  
 }

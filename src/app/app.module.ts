@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { NavComponent } from './nav/nav.component';
 
 //import { AlertModule } from '@coreui/angular';
 
@@ -16,7 +17,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     AboutComponent,
     LoginComponent,
     CreateAccountComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    NavComponent
     
   ],
   imports: [
