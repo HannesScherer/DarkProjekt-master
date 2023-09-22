@@ -1,12 +1,30 @@
-<button (click)="toggleMenu()">
-    <a><img [src]="lightNav"></a>
-</button>
-
-<div *ngIf="menuOpen" class="menu">
-    <a>Anmelden</a>
-    <a>Account erstellen</a>
-    <a>Über Uns</a>
-    <a>Datenschutz</a>
-    <a>Rechtliches</a>
-    <a>FAQ</a>
+<div class="nav">
+    <div class="leftNav">
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Home</a></li>
+          <li><a class="menu__item" href="#">About</a></li>
+          <li><a class="menu__item" href="#">Team</a></li>
+          <li><a class="menu__item" href="#">Contact</a></li>
+          <li><a class="menu__item" href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+<div class="centerNav">
+    <a><img [src]="lightLogo" id="logo"></a>
+</div>
+<div class="rightNav">
+    <a><div class="switch">
+         <input type="checkbox" class="switch__input" (click)="modetoggle()" id="Switch">
+        <label class="switch__label" for="Switch">
+            <span class="switch__indicator"></span>
+            <span class="switch__decoration"></span>
+        </label>
+      </div></a>
+</div>
 </div>
