@@ -4,6 +4,7 @@
     background-color: var(--color-menu);
     overflow: hidden;
     z-index: 3;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
 }
 .nav a{
     float:left;
@@ -28,9 +29,9 @@
 }
 .menu__btn {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
+  top: 30px;
+  left: 30px;
+  width: 40px;
   height: 26px;
   cursor: pointer;
   z-index: 1;
@@ -41,17 +42,17 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
-  background-color: #616161;
+  height: 5px;
+  background-color: var(--color-navStab);
   transition-duration: .25s;
 }
 .menu__btn > span::before {
   content: '';
-  top: -8px;
+  top: -15px;
 }
 .menu__btn > span::after {
   content: '';
-  top: 8px;
+  top: 15px;
 }
 .menu__box {
   display: block;
@@ -61,41 +62,49 @@
   width: 300px;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 70px 0;
   list-style: none;
-  background-color: #ECEFF1;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
+  background: var(--color-sidenav);
 }
 .menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+  color: var(--color-text);
+  
+  font-family: var(--font-family);
+  font-size: 25px;
   text-decoration: none;
   transition-duration: .25s;
+  
 }
 .menu__item:hover {
   background-color: #CFD8DC;
 }
 
 .centerNav{
-    float:none;
-    position: relative;
-    margin-left: 62%;
-    margin-top: -1%;
-    transform: translate(-50%,-50%);
-    
+    margin-left: 45%;
+    margin-top:0%;
+    z-index: 4;
+    position: absolute;
 }
 .rightNav{
-    float:right;
+    margin-left: 85%;
+    margin-right: 5%;
+    z-index: 5;
+    margin-top: 1%;
+    position: fixed;
 }
 .leftNav{
     float: left;
     margin-left: 1%;
     margin-top:1%;
+    z-index: 6;
+    position:fixed
 }
 
 .switch__input {
@@ -114,7 +123,7 @@
     display: inline-block;
     width: 100px;
     height: 50px;
-    background-color: #2B2B2B;
+    background-color: rgb(43, 43, 43);
     border: 5px solid #5B5B5B;
     border-radius: 9999px;
     cursor: pointer;
