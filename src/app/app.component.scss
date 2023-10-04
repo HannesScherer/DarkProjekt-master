@@ -10,7 +10,7 @@
     letter-spacing: var(--letter-spacing);
     position: relative;
     z-index: 1;
-    background-image: url("../assets/taube2k.png");
+    background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

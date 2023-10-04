@@ -8,10 +8,6 @@ import { AppComponent } from '../app.component';
 })
 export class ImpressumComponent extends AppComponent {
 
-  constructor() {
-      super();
-      
   
-  }
   
 }

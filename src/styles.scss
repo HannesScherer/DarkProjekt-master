@@ -22,6 +22,7 @@
     --letter-spacing: 4px;
     --color-objekt: rgb(230, 230, 255, 0.7);
     --color-navStab: rgb(43, 43, 43);
+    --bg-image: url("../assets/taube2k.png");
 }
 [dark-theme="dark"] {
     --color-bg:#333333;
@@ -36,4 +37,5 @@
     --color-menu: #333333;
     --color-objekt: rgba(31, 31, 33, 0.7);
     --color-navStab: #ffffe6;
+    --bg-image: url("../assets/backgroundDark.jpg");
 }

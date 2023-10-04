@@ -10,7 +10,6 @@ import { ImpressumComponent } from './impressum/impressum.component';
 
 export class AppComponent {
   
-  
 
   title = 'DarkProjekt';
   
@@ -22,6 +21,7 @@ export class AppComponent {
   discordLight = './assets/discord-mark-black-kleiner.svg';
   backGround = './assets/backgroundDark.jpg';
 
+
   tvalue:string ='';
   getValue(val:string){
     this.tvalue = val;
@@ -31,6 +31,19 @@ export class AppComponent {
     event.preventDefault();
     
   }
+  dataSave() {
+    sessionStorage.setItem('suche', this.tvalue);
+  }
+  get() {
+    return sessionStorage.getItem('suche');
+  }
+  dataRemove() {
+    sessionStorage.removeItem('suche');
+  }
+  deleteAll() {
+    sessionStorage.clear();
+  }
+
 
   
   
