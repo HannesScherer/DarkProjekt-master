@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ImpressumComponent } from './impressum/impressum.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,27 +23,12 @@ export class AppComponent {
   backGround = './assets/backgroundDark.jpg';
 
 
-  tvalue:string ='';
-  getValue(val:string){
-    this.tvalue = val;
-    console.warn(val);
-  }
+  
   handleClick(event: Event) {
     event.preventDefault();
     
   }
-  dataSave() {
-    sessionStorage.setItem('suche', this.tvalue);
-  }
-  get() {
-    return sessionStorage.getItem('suche');
-  }
-  dataRemove() {
-    sessionStorage.removeItem('suche');
-  }
-  deleteAll() {
-    sessionStorage.clear();
-  }
+  
 
 
   
