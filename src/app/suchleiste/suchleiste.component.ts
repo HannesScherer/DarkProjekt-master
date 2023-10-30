@@ -24,17 +24,18 @@ export class SuchleisteComponent {
   }
 
   pruefeEingabe() {
-    try {
+    // try {
 
-    if(this.eingabeWert.length >= 6 && this.pruefeNummer()){
-      this.router.navigate(['/ergebnis', this.eingabeWert]);
-    } else {
-      console.log('Falsche Eingabe');
-    }
+    // if(this.eingabeWert.length >= 6 && this.pruefeNummer()){
+      this.router.navigate(['/anzeige', this.eingabeWert]);
+    // } else {
+      // console.log('Falsche Eingabe');
+    // }
 
-  } catch(error){
-  console.error('Fehler bei der Überprüfung',error);
+//   } catch(error){
+//   console.error('Fehler bei der Überprüfung',error);
   
-}}
+// }
+    }
 
 }

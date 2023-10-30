@@ -9,7 +9,9 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { NavComponent } from './nav/nav.component';
 import { AnzeigeComponent } from './anzeige/anzeige.component';
 import { SuchleisteComponent } from './suchleiste/suchleiste.component';
-
+import { NotFoundComponent } from './not-found/not-found.component';
+import { DesignPaketComponent } from './design-paket/design-paket.component';
+import { HttpClientModule } from '@angular/common/http';
 //import { AlertModule } from '@coreui/angular';
 
 
@@ -22,12 +24,16 @@ import { SuchleisteComponent } from './suchleiste/suchleiste.component';
     ImpressumComponent,
     NavComponent,
     AnzeigeComponent,
-    SuchleisteComponent
+    SuchleisteComponent,
+    NotFoundComponent,
+    DesignPaketComponent
+    
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   
     //AlertModule
   ],

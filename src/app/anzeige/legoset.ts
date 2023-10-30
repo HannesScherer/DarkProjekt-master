@@ -1,7 +1,7 @@
 export interface legoset {
-    id: number;
-    name: string;
-    jahr: string;
-    teile: number;
-    vorhanden?: boolean;
+    set_id: number;
+    set_name: string;
+    preis: number;
+    anbieter_url: string;
+    set_url: string;
 }
